@@ -3,13 +3,6 @@ server:
 logging:
   level:
     cn.itsource.hrm: debug
-
-eureka:
-  instance:
-    prefer-ip-address: true #以ip注册到erueka中而不是主机名
-  client:
-    serviceUrl:
-      defaultZone: http://root:880811@localhost:8761/eureka/ #eureka的注
 datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
